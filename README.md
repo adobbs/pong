@@ -1,2 +1,3 @@
 # pong
-Pong recreation using Lua and Love2D with a simple AI opponent.
+Pong recreations using a variety of game engines:
+- Love2D scripted in Lua with a simple AI opponent.
