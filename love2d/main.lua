@@ -122,10 +122,10 @@ function love.update(dt)
         paddle1.dy = 0
     end
 
-    if ball.y < paddle2.y + 5 and ball.dx > 0 and ball.x > VIRTUAL_WIDTH * .45 then
-        paddle2.dy = paddle2.dy - (dt * (PADDLE_SPEED / 2))
-    elseif ball.y > paddle2.y + 15 and ball.dx > 0 and ball.x > VIRTUAL_WIDTH * .45 then
-        paddle2.dy = paddle2.dy + (dt * (PADDLE_SPEED / 2))
+    if ball.y < paddle2.y + 5 and ball.dx > 0 and ball.x > VIRTUAL_WIDTH * .4 then
+        paddle2.dy = paddle2.dy - (dt * (PADDLE_SPEED * .7))
+    elseif ball.y > paddle2.y + 15 and ball.dx > 0 and ball.x > VIRTUAL_WIDTH * .4 then
+        paddle2.dy = paddle2.dy + (dt * (PADDLE_SPEED * .7))
     else
         paddle2.dy = paddle2.dy + -(paddle2.dy * .2)
     end

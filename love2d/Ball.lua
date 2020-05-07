@@ -7,7 +7,7 @@ function Ball:init(x, y, width, height)
     self.height = height
 
     self.dx = math.random(2) == 1 and -100 or 100
-    self.dy = math.random(-70, 70)
+    self.dy = math.random(2) == 1 and math.random(-70, -20) or math.random(20, 70)
 end
 
 function Ball:collides(box)
